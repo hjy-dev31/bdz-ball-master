@@ -108,7 +108,7 @@ const tabs = [{id:'all', name:'전체'}, {id:'1', name:'1주'}, {id:'2', name:'2
 
 const CSV_URL = 'https://docs.google.com/spreadsheets/d/e/2PACX-1vQr9cBZShKoKnp0Baw-sB-pb26LvsbENLyrK-hHk7JIZpZRIdzDOed-OHFlhHpknPrjxNpDs1AvNCJz/pub?gid=0&single=true&output=csv';
 
-const today = new Date("2025-02-15");
+const today = new Date("2026-02-15");
 const todayNormalized = new Date(today.getFullYear(), today.getMonth(), today.getDate());
 const targetDate = new Date(2026, 1, 1); 
 const formattedDate = `${today.getMonth() + 1}월 ${today.getDate()}일`;
