@@ -1,24 +1,39 @@
-# Logs
-logs
-*.log
+# Dependency directories
+node_modules/
+jspm_packages/
+
+# Build artifacts
+dist/
+dist-ssr/
+*.local
+
+# Log files
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
 pnpm-debug.log*
-lerna-debug.log*
 
-node_modules
-dist
-dist-ssr
-*.local
-
-# Editor directories and files
+# Editor/IDE folders
 .vscode/*
 !.vscode/extensions.json
-.idea
-.DS_Store
+.idea/
 *.suo
 *.ntvs*
 *.njsproj
 *.sln
 *.sw?
+
+# Operating System files
+.DS_Store
+Thumbs.db
+
+# Environment variables (보안이 중요한 설정값들)
+.env
+.env.local
+.env.*.local
+
+# Vitetest/Cypress
+/cypress/videos/
+/cypress/screenshots/
+/playwright-report/
+/test-results/
