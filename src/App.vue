@@ -147,7 +147,7 @@ const fetchData = async () => {
 
       const weeklyStatus = weekRanges.map((range, i) => {
         const count = counts[i + 1];
-        if ((today >= range.start && today <= range.end) && count >= 5) return 'PASS';
+        if (count >= 5) return 'PASS';
         if (today > range.end) return 'FAIL';
         if (today >= range.start && today <= range.end) return 'PROGRESS';
         return 'READY';
