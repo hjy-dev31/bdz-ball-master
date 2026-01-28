@@ -137,7 +137,7 @@ const CSV_URL = 'https://docs.google.com/spreadsheets/d/e/2PACX-1vQr9cBZShKoKnp0
 const BANK_ACCOUNT = '토스뱅크 1000-6133-7921'
 
 // 1. 날짜 정규화 및 D-Day (문자열 형식 적용)
-const today = new Date("2026-02-15");
+const today = new Date();
 const todayDateString = today.toLocaleDateString('en-CA'); // YYYY-MM-DD 형식
 const todayNormalized = new Date(todayDateString);
 const targetDate = new Date("2026-02-01");
