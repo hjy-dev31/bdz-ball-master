@@ -116,8 +116,87 @@
               {{ isCopied ? '✅ 복사되었습니다!' : '계좌번호 복사하기' }}
             </button>
           </div>
+        </div>
+
+        <div class="space-y-4 pb-10">
+          <div class="bg-white rounded-[24px] p-6 shadow-sm border border-white">
+            <h3 class="text-[17px] font-bold text-[#191f28] mb-4 flex items-center gap-2">
+              📅 챌린지 기간 및 인증
+            </h3>
+            <ul class="space-y-4 text-[14px] text-[#4e5968] leading-relaxed">
+              <li class="flex gap-3">
+                <span class="text-blue-600 font-bold shrink-0">기간</span>
+                <span>2026년 2월 1일 ~ 2월 28일 (설 연휴 포함)</span>
+              </li>
+              <li class="flex gap-3">
+                <span class="text-blue-600 font-bold shrink-0">내용</span>
+                <span>볼마스터리 영상 또는 풋살 관련 개인 연습 (10분 이상)</span>
+              </li>
+              <li class="flex gap-3">
+                <span class="text-blue-600 font-bold shrink-0">시간</span>
+                <span>매일 잠들기 전까지 카톡방에 공유</span>
+              </li>
+            </ul>
           </div>
+        </div>
+
+        <div class="space-y-4 pb-10">
+          <div class="bg-white rounded-[24px] p-6 shadow-sm border border-white">
+            <h3 class="text-[17px] font-bold text-[#191f28] mb-4 flex items-center gap-2">
+              💰 보증금 및 벌금
+            </h3>
+            <div class="bg-[#f9fafb] rounded-xl p-4 mb-4 text-[13px] text-[#4e5968]">
+              주 단위로 성공 여부를 판단하며, 실패 시 보증금에서 25%씩 차감됩니다.
+            </div>
+            <ul class="space-y-4 text-[14px] text-[#4e5968]">
+              <li class="flex items-start gap-3">
+                <div class="w-5 h-5 bg-[#e8f3ff] rounded-full flex items-center justify-center shrink-0 mt-0.5">
+                  <span class="text-[10px] text-[#0064ff]">✓</span>
+                </div>
+                <span><strong>주 5회 이상</strong> 참여 시 해당 주차 성공</span>
+              </li>
+              <li class="flex items-start gap-3">
+                <div class="w-5 h-5 bg-[#fff0f1] rounded-full flex items-center justify-center shrink-0 mt-0.5">
+                  <span class="text-[10px] text-[#f04452]">!</span>
+                </div>
+                <span>미달 시 주차별 보증금의 <strong>25% 차감</strong></span>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="space-y-4 pb-10">
+          <div class="bg-white rounded-[24px] p-6 shadow-sm border border-white">
+            <h3 class="text-[17px] font-bold text-[#191f28] mb-4">📝 참가 방법</h3>
+            <ol class="space-y-4 text-[14px] text-[#4e5968]">
+              <li class="flex gap-3">
+                <b class="text-[#adb5bd]">1.</b>
+                <span><strong>1/31(토)</strong>까지 참가비 입금 (최소 2만원~)</span>
+              </li>
+              <li class="flex gap-3">
+                <b class="text-[#adb5bd]">2.</b>
+                <span>공식 오픈카톡방 입장</span>
+              </li>
+              <li class="flex gap-3">
+                <b class="text-[#adb5bd]">3.</b>
+                <span>매일 <strong>타임랩스</strong> 영상으로 인증 (첫날/마지막날은 달라진 모습 확인을 위해 <strong>풀영상</strong> 공유)</span>
+              </li>
+            </ol>
+          </div>
+        </div>
+
+        <div class="space-y-4 pb-10">
+          <div class="bg-gradient-to-br from-[#0064ff] to-[#00d082] rounded-[24px] p-6 text-white shadow-lg">
+            <h3 class="text-[17px] font-bold mb-2">🎁 Special Prize</h3>
+            <p class="text-[14px] opacity-90 leading-relaxed">
+              만근자 또는 최다 참여자에게는 특별한 상품이 지급될 수 있습니다!<br>
+              <span class="text-[12px] font-medium text-yellow-200">* 실패자들이 모은 기부금으로 선물을 준비합니다.</span>
+            </p>
+          </div>
+        </div>
       </template>
+
+      
     </main>
   </div>
 </template>
