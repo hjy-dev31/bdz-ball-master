@@ -1,36 +1,28 @@
 @import "tailwindcss";
 
-/* 레이아웃 안정화 및 토스 스타일 베이스 */
 :root {
-  font-family: 'Pretendard', -apple-system, BlinkMacSystemFont, system-ui, sans-serif;
-  background-color: #f2f4f6; /* 토스 그레이 배경 */
+  font-family: 'Pretendard', -apple-system, BlinkMacSystemFont, 'Apple SD Gothic Neo', sans-serif;
+  background-color: #f2f4f6;
   -webkit-font-smoothing: antialiased;
   box-sizing: border-box;
 }
 
-*, *::before, *::after {
-  box-sizing: inherit;
-}
+*, *::before, *::after { box-sizing: inherit; }
 
-body {
-  margin: 0;
-  padding: 0;
-  width: 100%;
-  overflow-x: hidden;
-}
+body { margin: 0; padding: 0; width: 100%; overflow-x: hidden; }
 
-/* 1위 카드 전용 황금빛 애니메이션 */
+/* 1위 카드 골드 애니메이션 */
 @keyframes gold-pulse {
   0% { border-color: #fbbf24; box-shadow: 0 0 5px rgba(251, 191, 36, 0.2); }
   50% { border-color: #f59e0b; box-shadow: 0 0 20px rgba(245, 158, 11, 0.4); }
   100% { border-color: #fbbf24; box-shadow: 0 0 5px rgba(251, 191, 36, 0.2); }
 }
+.king-border { animation: gold-pulse 2s infinite ease-in-out; border-width: 2px !important; }
 
-.king-border {
-  animation: gold-pulse 2s infinite ease-in-out;
-  border-width: 2px !important;
-}
-
-/* 스크롤바 숨기기 */
+/* 탭 바 스크롤 숨기기 */
 .no-scrollbar::-webkit-scrollbar { display: none; }
 .no-scrollbar { -ms-overflow-style: none; scrollbar-width: none; }
+
+/* 진행 중 펄스 효과 */
+.animate-status-pulse { animation: pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite; }
+@keyframes pulse { 0%, 100% { opacity: 1; } 50% { opacity: .6; } }
