@@ -33,7 +33,7 @@
 
     <main class="max-w-md mx-auto px-5 mt-4">
       
-      <template v-if="currentTab === 'today'">
+      <!-- <template v-if="currentTab === 'today'">
         <div v-if="!isChallengePeriod" class="bg-white rounded-[24px] p-10 text-center text-[#8b95a1] font-medium shadow-sm border border-white">
           현재는 챌린지 기간이 아닙니다 🏃‍♂️
         </div>
@@ -47,9 +47,9 @@
             </div>
           </div>
         </div>
-      </template>
+      </template> -->
 
-      <template v-else-if="currentTab !== 'rules'">
+      <template v-if="currentTab !== 'rules'">
         <div v-if="loading" class="text-center py-20 text-[#8b95a1] font-medium animate-pulse">데이터 로드 중...</div>
         <div v-else class="space-y-3">
           <div v-for="member in sortedMembers" :key="member.name"
@@ -207,10 +207,10 @@ import axios from 'axios';
 import Papa from 'papaparse';
 
 const loading = ref(true);
-const currentTab = ref('today');
+const currentTab = ref('rules');
 const members = ref([]);
 const isCopied = ref(false);
-const tabs = [{id:'today', name:'오늘'}, {id:'all', name:'전체'}, {id:'1', name:'1주'}, {id:'2', name:'2주'}, {id:'3', name:'3주'}, {id:'4', name:'4주'}, {id:'rules', name:'규칙'}];
+const tabs = [/*{id:'today', name:'오늘'}, */{id:'all', name:'전체'}, {id:'1', name:'1주'}, {id:'2', name:'2주'}, {id:'3', name:'3주'}, {id:'4', name:'4주'}, {id:'rules', name:'규칙'}];
 
 const CSV_URL = 'https://docs.google.com/spreadsheets/d/e/2PACX-1vQr9cBZShKoKnp0Baw-sB-pb26LvsbENLyrK-hHk7JIZpZRIdzDOed-OHFlhHpknPrjxNpDs1AvNCJz/pub?gid=0&single=true&output=csv';
 const BANK_ACCOUNT = '토스뱅크 1000-6133-7921'
