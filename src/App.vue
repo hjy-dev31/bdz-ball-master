@@ -207,7 +207,7 @@ import axios from 'axios';
 import Papa from 'papaparse';
 
 const loading = ref(true);
-const currentTab = ref('rules');
+const currentTab = ref('1');
 const members = ref([]);
 const isCopied = ref(false);
 const tabs = [/*{id:'today', name:'오늘'}, */{id:'all', name:'전체'}, {id:'1', name:'1주'}, {id:'2', name:'2주'}, {id:'3', name:'3주'}, {id:'4', name:'4주'}, {id:'rules', name:'규칙'}];
